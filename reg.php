@@ -7,7 +7,8 @@
                 "l", "d", "j", "e", "ya", "s", "m", "i", "t", "b", "Yo", "Iy", "Yu", "CH", "", "SH", "C", "U", "K", "E", "N", "G", "SH", "Z",
                 "H", "'", "F", "Y", "V", "A", "P", "R", "O", "L", "D", "J", "E", "YA", "S", "M", "I", "T", "B", "_", "X", "_", "", "", "No", ".", "", "", "", "", '', '', '\'');
 
-                $string = str_replace($eng, $rus, $string);
+                // Replace Russian characters with their transliterated Latin equivalents
+                $string = str_replace($rus, $eng, $string);
                 if (!empty($string)) {
                     return $string;
                 }
